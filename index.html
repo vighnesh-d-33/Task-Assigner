@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Task Assigner - Amace Solutions</title><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="connect-src https://script.google.com https://script.googleusercontent.com https://*.googleusercontent.com; frame-src blob:; object-src 'none'; base-uri 'none'; form-action 'none'"><link rel="stylesheet" href="style.css"></head><body><div id="bar"></div>
+<div id="L" class="auth"><div class="authbox"><div class="brand"><img src="icon.png" alt=""><div><b>amace solutions pvt.ltd.</b><small>TASK ASSIGNER</small></div></div>
+<h2>Welcome back 👋</h2><p class="mut">Login to assign and track your team's tasks.</p>
+<label>User ID or Name</label><input id="u" placeholder="Enter User ID or Name" autocomplete="username"><label>Password</label><input id="p" type="password" placeholder="Enter password" autocomplete="current-password" onkeydown="event.key=='Enter'&&go()">
+<button class="p full" id="lb" onclick="go()">Login</button><p class="c"><a href="#" onclick="forgot();return false">Forgot password?</a></p><div id="err"></div>
+<div class="addr dark">#429, 12th Cross Rd, 4th Phase, Peenya Industrial Area, Bengaluru – 560 058</div></div></div>
+<div id="A" class="app hide"><aside id="side"></aside><main id="main"></main></div>
+<div id="M" class="modal hide"><div class="box"><h3 id="mt"></h3><div id="mi"></div><div class="acts"><button class="p" id="mok">OK</button><button class="s" onclick="M.classList.add('hide')">Cancel</button></div></div></div>
+<div id="P" class="modal hide" onclick="if(event.target==this)closeP()"><div class="box pv"><div class="row"><b id="pt"></b><span><button class="s" id="pd">⬇ Download</button><button class="s" onclick="closeP()">✕ Close</button></span></div><div id="pb"></div></div></div>
+<script src="config.js"></script><script src="script.js"></script></body></html>
